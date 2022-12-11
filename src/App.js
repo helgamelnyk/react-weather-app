@@ -63,7 +63,7 @@ function App() {
           </ul>
         </div>
       </div>
-      <a href="https://github.com/helgamelnyk/weather-react-app" target="" className="text-decoration-none">Created by Olha Melnyk</a>
+      <a href="https://github.com/helgamelnyk/react-weather-app" target="" className="text-decoration-none">Created by Olha Melnyk</a>
     </div>
   );
 }
