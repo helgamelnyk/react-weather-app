@@ -1,5 +1,5 @@
-
 import './App.css';
+import Weather from './Weather';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
           </div>
         </div>
       </form>
+      <Weather />
       <div className="overview">
         <h1 className="ms-4 text-danger text-center">Kyiv</h1>
         <ul className="list-grop">
