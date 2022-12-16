@@ -1,8 +1,9 @@
 
 .App {
   background: linear-gradient(#f9f9f9, #dbeaf5);
-  width: 700px;
-  margin-left: 350px;
+  width: 900px;
+  height: 500px;
+margin-left: 300px;
 }
 .btn {
   background: #a6d8fd;
