@@ -1,9 +1,45 @@
 .Weather {
  color: blue;
 }
-.btn {
-    background: #a6d8fd;
-  }
 .Weather form {
-    margin-top: 30px;
+ margin-top: 20px;
 }
+.city-search {
+    width: 150px;
+    height: 40px ;
+  
+ 
+  }
+.button {
+    background-color: #e1f8ff;
+    border: none;
+    margin-left: -10px;
+    border-radius: 3px;
+    width: 80px;
+    height: 40px;
+    
+  }
+  .overview {
+    margin-top: -50px;
+  }
+ .city {
+color: #414141;
+margin-left: 70px;
+margin-top: 5px;
+ }
+.temperature {
+margin-left: 70px;
+}
+.units {
+    margin-top: -10px;
+}
+.icon {
+    margin-left: 30px;
+}
+.details {
+    width: 250px;
+    margin-top: 85px;
+    margin-left: -60px;
+    padding: 0;
+}
+

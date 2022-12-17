@@ -1,13 +1,16 @@
 
 .App {
+  font-family: 'Unbounded', cursive;;
   background: linear-gradient(#f9f9f9, #dbeaf5);
-  width: 850px;
+  width: 800px;
   height: 450px;
-margin-left: 300px;
-margin-top: 30px;
+  
+
 }
 
 .footer {
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 100px;
 }
 
