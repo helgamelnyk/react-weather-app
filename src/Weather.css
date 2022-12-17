@@ -1,5 +1,5 @@
 .Weather {
- color: blue;
+ color: #c6c6c6;
 }
 .Weather form {
  margin-top: 20px;
@@ -19,26 +19,33 @@
     height: 40px;
     
   }
+  .current-weather {
+    width: 500px;
+  }
   .overview {
     margin-top: -50px;
   }
  .city {
-color: #414141;
-margin-left: 70px;
-margin-top: 5px;
+
+margin-left: 90px;
+margin-top: 55px;
+ }
+
+ .description {
+    margin-top: 15px;
  }
 .temperature {
-margin-left: 70px;
+margin-left: 100px;
 }
 .units {
     margin-top: -10px;
 }
 .icon {
-    margin-left: 30px;
+    margin-left: 45px;
 }
 .details {
     width: 250px;
-    margin-top: 85px;
+    margin-top: 160px;
     margin-left: -60px;
     padding: 0;
 }
