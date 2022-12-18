@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+
 import axios from "axios";
 import "./Weather.css";
 
@@ -15,6 +16,7 @@ function handleResponse (response) {
     temperature: response.data.main.temp,
     humidity: response.data.main.humidity,
     description: response.data.weather[0].description,
+    icon: response.data.weather[0].icon,
     wind: response.data.wind.speed,
     city: response.data.name,
     visibility: response.data.visibility ,
