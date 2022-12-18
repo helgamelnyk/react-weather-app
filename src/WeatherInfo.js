@@ -1,24 +1,15 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
     return (
         <div className="d-flex flex-row current-weather">
               <div className="overview">
                 <h1 className="city">{props.data.city}</h1>
-                <div className="fs-6 temperature">
-                      <strong className="fs-2">{Math.round(props.data.temperature)} </strong>
-                      <span className="units">
-                        <a href="/" className="fs-6 text-decoration-none units">
-                        °C
-                        </a>
-                        |
-                        <a href="/" className="fs-6 text-decoration-none units">
-                          °F
-                        </a>
-                      </span>
-                    </div>
+                <WeatherTemperature celsius={props.data.temperature} />
+              
                 <ul className="list-grop description">
                   <li className="list-group-item fs-4">
                     <FormattedDate date={props.data.date} />
