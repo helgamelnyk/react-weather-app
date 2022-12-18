@@ -1,18 +1,28 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
 
 
-export default function Weather() {
-    const [ready, setReady] = useState(false);
-    const [temperature, setTemperature] = useState(null);
+export default function Weather(props) {
+    const [weatherData, setWeatherData] = useState({ ready: false });
 function handleResponse (response) {
-   setTemperature(response.data.main.temp);
-   setReady(true);
+    setWeatherData({
+        ready: true,
+        date: response.data.dt * 1000,
+    temperature: new Date (response.data.main.temp),
+    humidity: response.data.main.humidity,
+    description: response.data.weather[0].description,
+    wind: response.data.wind.speed,
+    city: response.data.name,
+    visibility: response.data.visibility ,
+    feelsLike: response.data.main.feels_like,
+    })
+
 }
 
-if (ready) {
+if (weatherData.ready) {
 
     return (
         <div className="Weather">
@@ -32,11 +42,11 @@ if (ready) {
                 </div>
               </form>
              
-              <div className="d-flex flex-row border border-3 current-weather">
+              <div className="d-flex flex-row current-weather">
               <div className="overview">
-                <h1 className="city">Kyiv</h1>
+                <h1 className="city">{weatherData.city}</h1>
                 <div className="fs-6 temperature">
-                      <strong className="fs-3">{temperature} </strong>
+                      <strong className="fs-3">{Math.round(weatherData.temperature)} </strong>
                       <span className="units">
                         <a href="/" className="fs-6 text-decoration-none units">
                         °C
@@ -48,8 +58,10 @@ if (ready) {
                       </span>
                     </div>
                 <ul className="list-grop">
-                  <li className="list-group-item fs-4">Monday 15:30</li>
-                  <li className="list-group-item fs-4 description">Snow</li>
+                  <li className="list-group-item fs-4">
+                    <FormattedDate date={weatherData.date} />
+                    </li>
+                  <li className="list-group-item fs-4 description">{weatherData.description}</li>
                 </ul>
                 <div className="clearfix weather-temperature icon">
                     <svg
@@ -68,12 +80,11 @@ if (ready) {
               <div className="row">
                 <div className="col-3">
                   <ul className="list-grop fs-5 details">
-                    <li className="list-group-item">
-                      Humidity
+                    <li className="list-group-item">Humidity: {weatherData.humidity} %
                     </li>
-                    <li className="list-group-item">Wind</li>
-                    <li className="list-group-item">Visibility</li>
-                    <li className="list-group-item">Feels like</li>
+                    <li className="list-group-item">Wind: {weatherData.wind} m/s</li>
+                    <li className="list-group-item">Visibility: {weatherData.visibility} km</li>
+                    <li className="list-group-item">Feels like: {Math.round(weatherData.feelsLike)}˚C</li>
                   </ul>
                 </div>
               </div>
@@ -81,13 +92,12 @@ if (ready) {
         </div>
             );
 } else {
-    const apiKey = "047039cdc749eb3af6e0tb8ofdc2bafb";
-    let city = `Kyiv`
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    const apiKey = "0ebc654fccbc00189d5408f3d6f15b08";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
 
-    return "Loding ...";
+    return "Loading ...";
 }
 
 
