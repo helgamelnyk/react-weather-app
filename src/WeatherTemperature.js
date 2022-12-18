@@ -19,11 +19,11 @@ function fahrenheit() {
             <div className="WeatherTemperature">
             <span className="temperature">{Math.round(props.celsius)}</span>
             <span className="units">
-              <a href="/" className="fs-6 text-decoration-none units">
-              °C
+              <a href="/" className="text-decoration-none">
+               °C
               </a>
               |
-              <a href="/" onClick={showFahrenheit} className="fs-6 text-decoration-none units">
+              <a href="/" onClick={showFahrenheit} className="text-decoration-none">
                 °F
               </a>
             </span>
