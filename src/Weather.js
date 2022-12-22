@@ -27,7 +27,7 @@ function handleResponse (response) {
 }
 
 function search() {
-    const apiKey = "fe1483f743b581b5520a1b725af03a49";
+    const apiKey = "0f8bc384a7c31b717a18cfe38a95ae06";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 }
