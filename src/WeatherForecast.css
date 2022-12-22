@@ -1,0 +1,8 @@
+.WeatherForecast {
+    width: 250px;
+    color: black;
+    border: 3px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    margin-top: -100px;
+}
