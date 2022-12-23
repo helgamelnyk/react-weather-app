@@ -1,20 +1,22 @@
 
 .App {
   font-family: 'Unbounded', cursive;;
-  background: linear-gradient(#004273, #00182a);
-  width: 860px;
+  background: linear-gradient(#20476f, #011d3e);
+  width: 790px;
   height: 410px;
- 
-  
+}
 
+@media (max-width: 560px) {
+ .App {
+  background: black;
+ }
 }
 
 .footer {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  color: #022642;
-  
-
+  font-size: 22px;
+ color: #011d3e;
+  margin-top: 10px;
 }
 

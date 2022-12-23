@@ -4,7 +4,7 @@ import Weather from './Weather';
 function App() {
   return (
     <div>
-    <div className="App rounded border border-1 border-light">
+    <div className="App border rounded">
       <Weather defaultCity="Stockholm" />
     </div>
     <div>

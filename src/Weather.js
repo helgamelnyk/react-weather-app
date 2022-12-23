@@ -44,7 +44,7 @@ setCity(event.target.value);
 if (weatherData.ready) {
     return (
         <div className="Weather">
-        <form onSubmit={handleSubmit} className="d-flex justify-content-center">
+        <form onSubmit={handleSubmit} className="d-flex justify-content-start">
                 <div className="row">
                   <div className="col-9">
                     <input
@@ -62,15 +62,12 @@ if (weatherData.ready) {
               </form>
              <WeatherInfo data={weatherData} />
              <WeatherForecast coordinates={weatherData.coordinates} />
-              
         </div>
             );
 } else {
    
 search();
 
-    return "Loading ...";
+    return null;
 }
-
-
 }

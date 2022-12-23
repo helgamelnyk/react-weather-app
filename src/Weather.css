@@ -3,13 +3,14 @@
 }
 .Weather form {
  margin-top: 20px;
+ margin-left: 200px;
 }
+
 .city-search {
     width: 150px;
     height: 40px ;
-  
- 
   }
+
 .button {
     background-color: #e1f8ff;
     border: none;
@@ -17,43 +18,43 @@
     border-radius: 3px;
     width: 80px;
     height: 40px;
-    
   }
+
   .current-weather {
     width: 500px;
   }
+
   .overview {
     margin-top: -50px;
   }
- .city {
-color: #8ed6eb;
-margin: 70px 0 0 30px;
- }
- .temperature {
-    margin: 0 0 15px 30px;
 
-    font-size: 35px;
+ .city {
+    color: #8ed6eb;
+    margin: 70px 0 10px 30px;
+ }
+
+ .temperature {
+  margin-left: 30px;
+  font-size: 35px;
     }
  
-
 .units {
-margin-left: 10px;
+ margin-left: 10px;
  font-size: 17px;
 }
-.description {
-    width: 300px;
-    margin-top: 10px;
-  
-  
- }
-.icon {
 
-    margin-left: 50px;
+.description {
+width: 300px;
+margin-top: 10px;
+ }
+
+.icon {
+margin-left: 50px;
 }
+
 .details {
-    width: 280px;
-    margin-top: 190px;
-    margin-left: -30px;
-   
+ width: 280px;
+margin-top: 190px;
+margin-left: -30px;
 }
 

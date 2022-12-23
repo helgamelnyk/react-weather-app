@@ -1,27 +1,24 @@
 .WeatherForecast {
-    width: 270px;
+    width: 170px;
     font-size: 23px;
     border-radius: 4px;
-    background-color: #f1f9fb;
-    margin-top: -300px;
-    margin-left: 560px;
+    background-color: #f0faff;
+    margin-top: -335px;
+    margin-left: 590px;
 }
 
 .WeatherForecast-day {
-    margin: 0 10px 0 5px;
-   color: #011e32;
-    
+   color: #041e39;
+   font-size: 18px; 
 }
 
 .WeatherForecast-temperatures {
-    margin: 0 10px;
-    font-size: 18px;
+    margin-left: 15px;
+    font-size: 16px;
     color: black;
 }
 
-
 .WeatherForecast-temperature-min {
-    margin: 0 10px;
-    opacity: 65%;
-
+    margin-left: 15px;
+    opacity: 60%;
 }
