@@ -6,11 +6,6 @@
   height: 410px;
 }
 
-@media (max-width: 560px) {
- .App {
-  background: black;
- }
-}
 
 .footer {
   text-align: center;
