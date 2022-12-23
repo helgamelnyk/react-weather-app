@@ -9,7 +9,7 @@ function App() {
     </div>
     <div>
  <footer>
-      <a href="https://github.com/helgamelnyk/react-weather-app" target="" className="text-decoration-none d-flex justify-content-center footer">Created by Olha Melnyk</a>
+      <a href="https://github.com/helgamelnyk/react-weather-app" target="blank" className="text-decoration-none d-flex justify-content-center footer">Created by Olha Melnyk</a>
       </footer>
     </div>
     </div>
