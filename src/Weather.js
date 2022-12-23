@@ -44,7 +44,7 @@ setCity(event.target.value);
 if (weatherData.ready) {
     return (
         <div className="Weather">
-        <form onSubmit={handleSubmit} className="d-flex justify-content-center me-4">
+        <form onSubmit={handleSubmit} className="d-flex justify-content-center">
                 <div className="row">
                   <div className="col-9">
                     <input

@@ -2,8 +2,9 @@
 .App {
   font-family: 'Unbounded', cursive;;
   background: linear-gradient(#004273, #00182a);
-  width: 1000px;
-  height: 450px;
+  width: 860px;
+  height: 410px;
+ 
   
 
 }
@@ -11,7 +12,9 @@
 .footer {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  margin-top: 60px;
   font-size: 20px;
+  color: #022642;
+  
+
 }
 
